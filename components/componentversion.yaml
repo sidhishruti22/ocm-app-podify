@@ -12,6 +12,10 @@ spec:
     url: ghcr.io/sidhishruti22/ocm-app-ex-podify
     secretRef:
       name: oci-creds
-  verify: []
+  verify: 
+  - name: alice
+    publicKey:
+      secretRef:
+        name: alice-publickey 
   references:
     expand: true
