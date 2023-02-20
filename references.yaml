@@ -1,7 +1,7 @@
 name: backend
 componentName: github.com/sidhishruti22/backend
-version: v1.1.2
+version: v1.0.1
 ---
 name: frontend
 componentName: github.com/sidhishruti22/frontend
-version: v1.1.2
+version: v1.0.1

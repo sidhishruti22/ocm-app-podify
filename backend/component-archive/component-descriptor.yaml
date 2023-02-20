@@ -9,7 +9,7 @@ repositoryContexts: []
 spec:
   resources:
   - access:
-      localReference: sha256.8de7bd97901b7c8795e59400cdd422d2b5229096b3917e412d60cde1e7a96d8d
+      localReference: sha256.c23a1477a5aad650be9223e8c30e2a02dc67bb32f2690705f3f8d292f187288e
       mediaType: application/yaml
       type: localBlob
     name: config
@@ -24,7 +24,7 @@ spec:
     type: ociImage
     version: 6.2.0
   - access:
-      localReference: sha256.203118e69e8d79455f316ef7ba9ccc8390ae0d9fa4456ed53c5f5d0a62dcce8d
+      localReference: sha256.33036941e272207af2ad0d83316aa15b7970d48a7f16f8efc8d442fc57334f7b
       mediaType: application/x-tgz
       type: localBlob
     name: manifests
