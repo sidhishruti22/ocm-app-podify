@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment 
+metadata:
+  name: django-app
+  labels:
+    app: django-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: django-app
+  template:  
+    metadata:
+      labels: 
+        app: django-app
+    spec:
+      containers:
+        - name: django-app
+          image: ammar31/python-django-2.3
+          imagePullPolicy: Always
+          ports: 
+            - containerPort: 8000
+          env:
+            - name: DB_HOSTNAME
+              value: "mysql"            
+#            - name: DB_PORT
+#              value: "3306"            
+            - name: DB_NAME
+              value: "djangoapp"            
+            - name: DB_USERNAME
+              value: "root"            
+            - name: DB_PASSWORD
+              value: "mesutOzil31@%"

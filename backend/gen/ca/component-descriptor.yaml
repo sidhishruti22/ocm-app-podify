@@ -1,0 +1,33 @@
+apiVersion: ocm.software/v3alpha1
+kind: ComponentVersion
+metadata:
+  name: github.com/sidhishruti22/backend
+  provider:
+    name: sidhishruti22
+  version: v1.0.1
+repositoryContexts: []
+spec:
+  resources:
+  - access:
+      localReference: sha256.8de7bd97901b7c8795e59400cdd422d2b5229096b3917e412d60cde1e7a96d8d
+      mediaType: application/yaml
+      type: localBlob
+    name: config
+    relation: local
+    type: configdata.ocm.software
+    version: v1.0.1
+  - access:
+      imageReference: ammar31/database-app
+      type: ociArtifact
+    name: image
+    relation: external
+    type: ociImage
+    version: 6.2.0
+  - access:
+      localReference: sha256.0c3e42722ee895a9382081a4d6f3e41e8c972f00ebffe731c69d3b7ee3790901
+      mediaType: application/x-tgz
+      type: localBlob
+    name: manifests
+    relation: local
+    type: kustomize.ocm.fluxcd.io
+    version: v1.0.1
