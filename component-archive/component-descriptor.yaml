@@ -1,0 +1,16 @@
+apiVersion: ocm.software/v3alpha1
+kind: ComponentVersion
+metadata:
+  name: github.com/sidhishruti22/ocm-app-podify
+  provider:
+    name: sidhishruti22
+  version: v1.0.1-dev
+repositoryContexts: []
+spec:
+  references:
+  - componentName: github.com/sidhishruti22/backend
+    name: backend
+    version: v1.1.2
+  - componentName: github.com/sidhishruti22/frontend
+    name: frontend
+    version: v1.1.2
