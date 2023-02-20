@@ -11,7 +11,7 @@ spec:
   repository:
     url: ghcr.io/sidhishruti22/ocm-app-ex-podify
     secretRef:
-      name: oci-creds
+      name: creds
   verify: 
   - name: alice
     publicKey:
