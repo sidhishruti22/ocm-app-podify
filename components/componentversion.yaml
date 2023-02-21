@@ -5,12 +5,17 @@ metadata:
   namespace: ocm-system
 spec:
   interval: 10m0s
-  component: github.com/sidhishruti22/
+  component: github.com/sidhishruti22/ocm-app-podify
   version:
     semver: v1.0.3
   repository:
     url: ghcr.io/sidhishruti22/ocm-app-ex-podify
     secretRef:
       name: creds
+  verify:
+  - name: alice
+    publicKey:
+      secretRef:
+        name: alice-publickey    
   references:
     expand: true
