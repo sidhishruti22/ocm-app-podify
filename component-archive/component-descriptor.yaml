@@ -10,7 +10,7 @@ spec:
   references:
   - componentName: github.com/sidhishruti22/backend
     name: backend
-    version: v1.1.2
+    version: v1.0.1
   - componentName: github.com/sidhishruti22/frontend
     name: frontend
-    version: v1.1.2
+    version: v1.0.1
