@@ -18,4 +18,6 @@ spec:
       secretRef:
         name: alice-publickey    
   references:
-    expand: true
+    name: backend
+    componentName: github.com/sidhishruti22/backend
+    version: v1.0.1
