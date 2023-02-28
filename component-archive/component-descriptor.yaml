@@ -1,10 +1,10 @@
 apiVersion: ocm.software/v3alpha1
 kind: ComponentVersion
 metadata:
-  name: github.com/sidhishruti22/ocm-app-podify
+  name: github.com/weaveworks/podify
   provider:
     name: sidhishruti22
-  version: v1.0.1-dev
+  version: v1.0.1
 repositoryContexts: []
 spec:
   references:
