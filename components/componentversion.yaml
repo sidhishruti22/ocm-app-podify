@@ -5,7 +5,7 @@ metadata:
   namespace: ocm-system
 spec:
   interval: 10m0s
-  component: 
+  component: ocm-app-podify 
   version:
     semver: v1.0.3
   repository:
